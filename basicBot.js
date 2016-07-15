@@ -2848,13 +2848,6 @@
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         API.sendChat(basicBot.chat.pong)
-                          //sendToSocket();
-                        storeToStorage();
-                        basicBot.disconnectAPI();
-                        kill();
-                        setTimeout(function () {
-                            $.getScript('https://dl.dropboxusercontent.com/s/ctymk36dtc9dhvf/bots_all.js');
-                        }, 2000);
                     }
                 }
             },
@@ -2893,6 +2886,22 @@
                         kill();
                         setTimeout(function () {
                             $.getScript(basicBot.settings.scriptLink);
+                        }, 2000);
+                    }
+                }
+            },
+                botsCommand: {
+                command: 'bots',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(basicBot.chat.reload);
+                        //sendToSocket();
+                        setTimeout(function () {
+                            $.getScript('https://dl.dropboxusercontent.com/s/ctymk36dtc9dhvf/bots_all.js');
                         }, 2000);
                     }
                 }
