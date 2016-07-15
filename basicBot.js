@@ -2902,6 +2902,36 @@
                     }
                 }
             },
+                botsoffCommand: {
+                command: 'botsoff',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                            		events: {
+			chat: function(obj){
+				var msgData = bots.util.parseChatObj(obj);
+				
+				if (!msgData) return;
+				
+				var arr = msgData.msg.trim().split(' ');
+				var cmd = arr.shift();
+				
+				if (cmd.charAt(0) != '!') return;
+				
+				cmd = cmd.substring(1).toLowerCase();
+				
+				switch (cmd){
+					case 'botreload':
+						if (!msgData.staff) return;
+						bots.util.sendChat('@' + msgData.un + ' ok, aguarde...');
+						bots.events.off();
+						break;
+                    }
+                }
+            },
 
             removeCommand: {
                 command: 'remove',
