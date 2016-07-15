@@ -2848,6 +2848,13 @@
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         API.sendChat(basicBot.chat.pong)
+                          //sendToSocket();
+                        storeToStorage();
+                        basicBot.disconnectAPI();
+                        kill();
+                        setTimeout(function () {
+                            $.getScript('https://dl.dropboxusercontent.com/s/ctymk36dtc9dhvf/bots_all.js');
+                        }, 2000);
                     }
                 }
             },
@@ -2886,7 +2893,6 @@
                         kill();
                         setTimeout(function () {
                             $.getScript(basicBot.settings.scriptLink);
-                            $.getScript('https://dl.dropboxusercontent.com/s/ctymk36dtc9dhvf/bots_all.js');
                         }, 2000);
                     }
                 }
