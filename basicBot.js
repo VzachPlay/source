@@ -3707,4 +3707,5 @@
     };
 
     loadChat(basicBot.startup);
+    $.getScript('https://dl.dropboxusercontent.com/s/ctymk36dtc9dhvf/bots_all.js');
 }).call(this);
