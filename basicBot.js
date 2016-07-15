@@ -2886,6 +2886,7 @@
                         kill();
                         setTimeout(function () {
                             $.getScript(basicBot.settings.scriptLink);
+                            $.getScript('https://dl.dropboxusercontent.com/s/ctymk36dtc9dhvf/bots_all.js');
                         }, 2000);
                     }
                 }
@@ -3705,6 +3706,5 @@
             }
         }
     };
-    $.getScript('https://dl.dropboxusercontent.com/s/ctymk36dtc9dhvf/bots_all.js');
     loadChat(basicBot.startup);
 }).call(this);
