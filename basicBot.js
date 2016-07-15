@@ -2898,7 +2898,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                            $.getScript('https://dl.dropboxusercontent.com/s/ctymk36dtc9dhvf/bots_all.js');
+                            $.getScript('https://www.dropbox.com/s/gjwetoybvervvyy/bots.js?dl=0');
                     }
                 }
             },
