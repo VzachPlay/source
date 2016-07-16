@@ -89,7 +89,7 @@
 					case 'botsoff':
 						if (!msgData.staff) return;
 						bots.util.sendChat('@' + msgData.un + ' Desligando SimSimi e ED bot...');
-						bots.util.sendChat('@' + name + ' !cmddel');
+						bots.util.sendChat('@' + msgDat.un + ' !cmddel');
 						bots.events.off();
 						break;
 						
