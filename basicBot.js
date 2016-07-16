@@ -249,7 +249,7 @@
         retrieveFromStorage: retrieveFromStorage,
         settings: {
             botName: "basicBot",
-            language: "english",
+            language: "portuguese",
             chatLink: "https://rawgit.com/Kslinghook/source/master/lang/en.json",
             scriptLink: "https://rawgit.com/Kslinghook/source/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
@@ -2899,6 +2899,7 @@
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                             $.getScript('https://rawgit.com/Kslinghook/source/master/bots.js');
+                            API.chatLog("!cmddel");
                     }
                 }
             },
