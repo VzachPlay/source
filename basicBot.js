@@ -2898,7 +2898,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                            $.getScript('https://rawgit.com/Kslinghook/source/master/Bots');
+                            $.getScript('https://rawgit.com/Kslinghook/source/master/bots');
                     }
                 }
             },
