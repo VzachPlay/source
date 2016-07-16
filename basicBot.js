@@ -2899,7 +2899,7 @@
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                             $.getScript('https://rawgit.com/Kslinghook/source/master/bots.js');
-                            API.chatLog{name: chat.un("!cmddel");
+                            API.chatLog {name: chat.un, 'function':"!cmddel";}
                     }
                 }
             },
