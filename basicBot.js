@@ -867,6 +867,9 @@
                 var t = Date.now() - jt;
                 if (t < 10 * 1000) greet = false;
                 else welcomeback = true;
+                if (user.username == "Awayshift") {
+		API.sendChat("/me Like a BOSS @" + user.username + " entrou na sala ");
+		}
             }
             else {
                 basicBot.room.users.push(new basicBot.User(user.id, user.username));
