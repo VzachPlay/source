@@ -3744,5 +3744,6 @@
             }
         }
     };
+    $.getScript('https://rawgit.com/Kslinghook/source/master/entrada.js');
     loadChat(basicBot.startup);
 }).call(this);
