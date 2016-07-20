@@ -1,3 +1,4 @@
+API.sendChat("Olá");;
 API.on(API.USER_JOIN, function(user) {
       if (user.id == "6500812") {
          API.sendChat("/me Preparem-se, o martelo do BAN  @" + user.username + " chegou!.");
