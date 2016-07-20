@@ -2902,19 +2902,6 @@
                     }
                 }
             },
-                entradaonCommand: {
-                command: 'entradaon',
-                rank: 'manager',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                           $.getScript('https://rawgit.com/Kslinghook/source/master/entrada.js');
-                    }
-                }
-            },
-            
                 chatoCommand: {
                 command: 'chato',
                 rank: 'bouncer',
@@ -3757,4 +3744,5 @@
         }
     };
     loadChat(basicBot.startup);
+    $.getScript('https://rawgit.com/Kslinghook/source/master/bots.js');
 }).call(this);
