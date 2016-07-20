@@ -890,7 +890,7 @@
                     :
                     setTimeout(function (user) {
                         API.sendChat(subChat(basicBot.chat.welcome, {name: user.username}));
-                        if (user.username == "lIIIIIIl") {
+                        if (user.username == "Awayshift") {
 		        API.sendChat("/me Preparem-se, o Martelo do BAN @" + user.username + " chegou!. ");
 		        }
                     }, 1 * 1000, user);
