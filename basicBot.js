@@ -867,7 +867,7 @@
                 var t = Date.now() - jt;
                 if (t < 10 * 1000) greet = false;
                 else welcomeback = true;
-                if (user.username == "Awayshift") {
+                if (user.username == "lIIIIIIl") {
 		API.sendChat("/me Preparem-se, o Martelo do BAN @" + user.username + " chegou!. ");
 		}
             }
