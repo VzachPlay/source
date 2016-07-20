@@ -868,7 +868,7 @@
                 if (t < 10 * 1000) greet = false;
                 else welcomeback = true;
                 if (user.username == "Awayshift") {
-		API.sendChat("/me Like a BOSS @" + user.username + " entrou na sala ");
+		API.sendChat("/me Preparem-se, o Martelo do BAN @" + user.username + " chegou!. ");
 		}
             }
             else {
