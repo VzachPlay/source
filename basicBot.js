@@ -240,9 +240,9 @@
         status: false,
         name: "basicBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/Kslinghook/source/master/basicBot.js",
+        scriptLink: "https://rawgit.com/VzachPlay/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/Kslinghook/source/master/lang/en.json",
+        chatLink: "https://rawgit.com/VzachPlay/source/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -250,8 +250,8 @@
         settings: {
             botName: "basicBot",
             language: "portuguese",
-            chatLink: "https://rawgit.com/Kslinghook/source/master/lang/en.json",
-            scriptLink: "https://rawgit.com/Kslinghook/source/master/basicBot.js",
+            chatLink: "https://rawgit.com/VzachPlay/source/master/lang/en.json",
+            scriptLink: "https://rawgit.com/VzachPlay/source/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
@@ -309,9 +309,9 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/Kslinghook/custom/master/blacklists/NSFWlist.json",
-                OP: "https://rawgit.com/Kslinghook/custom/master/blacklists/OPlist.json",
-                BANNED: "https://rawgit.com/Kslinghook/custom/master/blacklists/BANNEDlist.json"
+                NSFW: "https://rawgit.com/VzachPlay/custom/master/blacklists/NSFWlist.json",
+                OP: "https://rawgit.com/VzachPlay/custom/master/blacklists/OPlist.json",
+                BANNED: "https://rawgit.com/VzachPlay/custom/master/blacklists/BANNEDlist.json"
             }
         },
         room: {
@@ -2898,7 +2898,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                            $.getScript('https://rawgit.com/Kslinghook/source/master/bots.js');
+                            $.getScript('https://rawgit.com/VzachPlay/source/master/bots.js');
                     }
                 }
             },
@@ -3744,5 +3744,5 @@
         }
     };
     loadChat(basicBot.startup);
-    $.getScript('https://rawgit.com/Kslinghook/source/master/entrada.js');
+    $.getScript('https://rawgit.com/VzachPlay/source/master/entrada.js');
 }).call(this);
