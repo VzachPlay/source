@@ -1,9 +1,9 @@
 /**
 	Bots API by Caipira
 	
-	Script para ser executado no plug, dubtrack e musiqpad sem seleÃ§Ã£o manual do site.
-	Nota: esta API apenas comunica diretamente com os sites responsÃ¡veis pelos conteÃºdos providos,
-	nÃ£o tendo direitos sobre seus conteÃºdos nem receita envolvida nesse meio.
+	Script para ser executado no plug, dubtrack e musiqpad sem seleÃƒÂ§ÃƒÂ£o manual do site.
+	Nota: esta API apenas comunica diretamente com os sites responsÃƒÂ¡veis pelos conteÃƒÂºdos providos,
+	nÃƒÂ£o tendo direitos sobre seus conteÃƒÂºdos nem receita envolvida nesse meio.
 */
 
 (function() {
@@ -24,9 +24,9 @@
 				if (document.location.origin.match(/plug\.dj$/))
 					return bots.consts.PLUG;
 				
-				/* O musiqpad pode ser hosteado em qualquer domÃ­nio, portanto
-					tentaremos identificÃ¡-lo a partir de caracterÃ­sticas prÃ³prias,
-					como a API e coisas da pÃ¡gina. */
+				/* O musiqpad pode ser hosteado em qualquer domÃƒÂ­nio, portanto
+					tentaremos identificÃƒÂ¡-lo a partir de caracterÃƒÂ­sticas prÃƒÂ³prias,
+					como a API e coisas da pÃƒÂ¡gina. */
 				
 				if (window.API && API.DATA && API.room && API.chat)
 					return bots.consts.MP;
@@ -89,7 +89,7 @@
 					case 'botsoff':
 						if (!msgData.staff) return;
 						bots.util.sendChat('@' + msgData.un + ' Desligando SimSimi e ED bot...');
-						bots.util.sendChat('@' + name + '!cmddel');
+						bots.util.sendChat('!cmddel');
 						bots.events.off();
 						break;
 						
@@ -158,7 +158,7 @@
 				bots.session.site = bots.util.detectSite();
 				
 				if (bots.session.site == -1)
-					return alert('Site nÃ£o reconhecido!');
+					return alert('Site nÃƒÂ£o reconhecido!');
 				
 				if (bots.session.site == bots.consts.DUB)
 					bots.util.loadDubCustomAPI();
