@@ -866,6 +866,12 @@
                 var jt = u.jointime;
                 var t = Date.now() - jt;
                 if (t < 10 * 1000) greet = false;
+                if (user.username == "Awayshift") {
+                API.sendChat("/me Preparem-se, o martelo do BAN  @" + user.username + " voltou!.");
+                } 
+                if (user.username == "VzachPlay") {
+                API.sendChat("/me O Melhor segurança @" + user.username + " entrou na sala!.");
+                } 
                 else welcomeback = true;
             }
             else {
