@@ -867,9 +867,6 @@
                 var t = Date.now() - jt;
                 if (t < 10 * 1) greet = false;
                 else welcomeback = true;
-                if (user.username == "lIIIIIIl") {
-		API.sendChat("/me Preparem-se, o Martelo do BAN @" + user.username + " voltou!. ");
-		}
             }
             else {
                 basicBot.room.users.push(new basicBot.User(user.id, user.username));
@@ -890,9 +887,6 @@
                     :
                     setTimeout(function (user) {
                         API.sendChat(subChat(basicBot.chat.welcome, {name: user.username}));
-                        if (user.username == "soundlover") {
-		        API.sendChat("/me Preparem-se, o Martelo do BAN @" + user.username + " chegou!. ");
-		        }
                     }, 1 * 1000, user);
             }
         },
