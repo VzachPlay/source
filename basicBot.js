@@ -868,7 +868,7 @@
                 if (t < 10 * 1000) greet = false;
                 else welcomeback = true;
                 if (user.username == "lIIIIIIl") {
-		API.sendChat("/me Preparem-se, o Martelo do BAN @" + user.username + " chegou!. ");
+		API.sendChat("/me Preparem-se, o Martelo do BAN @" + user.username + " voltou!. ");
 		}
             }
             else {
@@ -890,6 +890,9 @@
                     :
                     setTimeout(function (user) {
                         API.sendChat(subChat(basicBot.chat.welcome, {name: user.username}));
+                        if (user.username == "lIIIIIIl") {
+		        API.sendChat("/me Preparem-se, o Martelo do BAN @" + user.username + " chegou!. ");
+		        }
                     }, 1 * 1000, user);
             }
         },
