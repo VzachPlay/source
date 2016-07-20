@@ -865,7 +865,7 @@
                 var u = basicBot.userUtilities.lookupUser(user.id);
                 var jt = u.jointime;
                 var t = Date.now() - jt;
-                if (t < 10 * 1000) greet = false;
+                if (t < 10 * 1) greet = false;
                 else welcomeback = true;
                 if (user.username == "lIIIIIIl") {
 		API.sendChat("/me Preparem-se, o Martelo do BAN @" + user.username + " voltou!. ");
