@@ -1,0 +1,41 @@
+{
+   "room": "VzachPlay",
+   "author": "Eumesmo",
+   "icon": null,
+   "css": "#0000ff",
+   "rules": {
+      "allowAutorespond": true,
+      "allowAutowoot": true,
+      "allowAutojoin": true,
+      "allowAutograb": true,
+      "allowSmartVote": true,
+      "allowEmotes": true,
+      "allowShowingMehs": true,
+      "forceSmartVote": false
+   },
+   "ccc": {
+      "admin": null,
+      "ambassador": null,
+      "host": "#ff0000",
+      "cohost": "#0000ff",
+      "manager": "#00ffff,
+      "bouncer": "#00ff00",
+      "rdj": "#fcff00",
+      "subscriber": null,
+      "silversubscriber": null,
+      "friend": "#ff4400",
+      "user": "#8000ff"
+   },
+   "images": {
+      "background": "https://cdn.radiant.dj/rcs/bg/2k14minecraft.jpg",
+      "playback": null,
+      "admin": null,
+      "ambassador": null,
+      "host": "http://imgur.com/a/pm6ZI",
+      "cohost": "https://2.bp.blogspot.com/-JZiCWMp1Fl8/V3Si4_AFl1I/AAAAAAAAFQ4/wIH4DxWDiUwZawfbYDeOeUWQ6lmWaEKIwCLcB/s1600/host.png",
+      "manager": "https://3.bp.blogspot.com/-hjdU8QpD-ro/V3Si45zhzUI/AAAAAAAAFQ0/KwDdKPNLLgMqIcbiR7RviQPXVJqBkUyuACLcB/s1600/manager.png",
+      "bouncer": "https://1.bp.blogspot.com/-dx7EtwyHpiY/V3Si42MclbI/AAAAAAAAFRI/meHDCT5i7XETZ7x9dN7EO2pGq9avWC93ACLcB/s1600/bouncer.png",
+      "rdj": "https://1.bp.blogspot.com/-bHAwjpVUFy8/V3Si5OuZuoI/AAAAAAAAFRA/vo3ItrPv54UzS3ISTm_O4opZ-l8QwLurgCLcB/s1600/rdj.png",
+      "subscriber": null,
+      "silversubscriber": null
+   }
