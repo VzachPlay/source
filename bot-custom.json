@@ -2,7 +2,7 @@
    "room": "VzachPlay",
    "author": "Eumesmo",
    "icon": null,
-   "css": "#0000ff",
+   "css": "https://rawgit.com/VzachPlay/source/master/bot.css",
    "rules": {
       "allowAutorespond": true,
       "allowAutowoot": true,
